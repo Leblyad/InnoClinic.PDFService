@@ -3,12 +3,12 @@ const PDFDocument = require('pdfkit');
 function buildPDF(req, dataCallback, endCallback) {
     const doc = new PDFDocument({ bufferPages: true, font: 'Courier', size: 'A6' });
 
-    const office = req.body.office;
-    const patient = req.body.patient;
-    const doctor = req.body.doctor;
-    const time = req.body.time;
-    const service = req.body.service;
-    const price = req.body.price;
+    const office = req.body.Office;
+    const patient = req.body.Patient;
+    const doctor = req.body.Doctor;
+    const time = req.body.Time;
+    const service = req.body.Service;
+    const price = req.body.Price;
 
     let col1LeftPos = 50;
     let colWidth = 100;
